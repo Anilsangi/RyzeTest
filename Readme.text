@@ -5,7 +5,7 @@ Steps:
 4. Just change the config.properties file location as per your machine in TestBase.java class
 5.just you may run the tests individully or from testng.xml file as existed in the project folder
 6.for viewing the reports, just refresh the project and open the test-output>> extent.html file.
-7.ypu may observe the results in the browser.
+7.you may observe the results in the browser.
 
 
 
