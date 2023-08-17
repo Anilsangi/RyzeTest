@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-22T15:08:18 SAST" name="Suite" finished-at="2023-07-22T15:08:56 SAST" duration-ms="37675">
+    <groups>
+    </groups>
+    <test started-at="2023-07-22T15:08:18 SAST" name="Test" finished-at="2023-07-22T15:08:56 SAST" duration-ms="37675">
+      <class name="com.ryze.qa.tests.HomePageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ryze.qa.tests.HomePageTest@397fbdb]" started-at="2023-07-22T15:08:34 SAST" name="setup" finished-at="2023-07-22T15:08:42 SAST" duration-ms="7159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyDescriptionTest()[pri:1, instance:com.ryze.qa.tests.HomePageTest@397fbdb]" started-at="2023-07-22T15:08:42 SAST" name="verifyDescriptionTest" finished-at="2023-07-22T15:08:56 SAST" duration-ms="13998" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button ng-show="$ctrl.mode === 'edit' &amp;&amp; !$ctrl.loadDetailedPanel" ng-disabled="!$ctrl.hasChanges" class="btn btn-default btn-compact btn-primary" id="saveAsset" ng-click="$ctrl.save()" disabled="disabled">...</button> is not clickable at point (1495, 674). Other element would receive the click: <div class="mdb-edit-content-properties-buttons" ng-if="$ctrl.activeTab === 'properties'">...</div>
+  (Session info: chrome=114.0.5735.248)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6ca916d4f61aa3bc6e08d486403ad9b8, clickElement {id=BA732E16FFEF3EF92047DA0BEC58F3BE_element_146}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\srepa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53090}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53090/devtoo..., se:cdpVersion: 114.0.5735.248, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (6ca916d4f61aa3bc6e08d486403ad9b8)] -> xpath: //button[@id='saveAsset']]
+Session ID: 6ca916d4f61aa3bc6e08d486403ad9b8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button ng-show="$ctrl.mode === 'edit' &amp;&amp; !$ctrl.loadDetailedPanel" ng-disabled="!$ctrl.hasChanges" class="btn btn-default btn-compact btn-primary" id="saveAsset" ng-click="$ctrl.save()" disabled="disabled">...</button> is not clickable at point (1495, 674). Other element would receive the click: <div class="mdb-edit-content-properties-buttons" ng-if="$ctrl.activeTab === 'properties'">...</div>
+  (Session info: chrome=114.0.5735.248)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6ca916d4f61aa3bc6e08d486403ad9b8, clickElement {id=BA732E16FFEF3EF92047DA0BEC58F3BE_element_146}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\srepa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53090}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53090/devtoo..., se:cdpVersion: 114.0.5735.248, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (6ca916d4f61aa3bc6e08d486403ad9b8)] -> xpath: //button[@id='saveAsset']]
+Session ID: 6ca916d4f61aa3bc6e08d486403ad9b8
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+at com.ryze.qa.pages.HomePage.addDescription(HomePage.java:92)
+at com.ryze.qa.tests.HomePageTest.verifyDescriptionTest(HomePageTest.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDescriptionTest -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.ryze.qa.tests.HomePageTest@397fbdb]" started-at="2023-07-22T15:08:56 SAST" name="TearDown" finished-at="2023-07-22T15:08:56 SAST" duration-ms="249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.ryze.qa.tests.HomePageTest -->
+      <class name="com.ryze.qa.tests.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ryze.qa.tests.LoginPageTest@49e53c76]" started-at="2023-07-22T15:08:18 SAST" name="setUp" finished-at="2023-07-22T15:08:26 SAST" duration-ms="7559" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginpageTitleTest()[pri:1, instance:com.ryze.qa.tests.LoginPageTest@49e53c76]" started-at="2023-07-22T15:08:26 SAST" name="loginpageTitleTest" finished-at="2023-07-22T15:08:26 SAST" duration-ms="46" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginpageTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ryze.qa.tests.LoginPageTest@49e53c76]" started-at="2023-07-22T15:08:26 SAST" name="tearDown" finished-at="2023-07-22T15:08:26 SAST" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ryze.qa.tests.LoginPageTest@49e53c76]" started-at="2023-07-22T15:08:26 SAST" name="setUp" finished-at="2023-07-22T15:08:34 SAST" duration-ms="8056" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest()[pri:2, instance:com.ryze.qa.tests.LoginPageTest@49e53c76]" started-at="2023-07-22T15:08:34 SAST" name="loginTest" finished-at="2023-07-22T15:08:34 SAST" duration-ms="228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ryze.qa.tests.LoginPageTest@49e53c76]" started-at="2023-07-22T15:08:34 SAST" name="tearDown" finished-at="2023-07-22T15:08:34 SAST" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ryze.qa.tests.LoginPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

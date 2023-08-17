@@ -1,0 +1,13 @@
+Steps:
+1.Clone the project from Repository to your Machine
+2.Use any IDE like (Eclipse i used)
+3.Open the project file in Eclipse Ide
+4. Just change the config.properties file location as per your machine in TestBase.java class
+5.just you may run the tests individully or from testng.xml file as existed in the project folder
+6.for viewing the reports, just refresh the project and open the test-output>> extent.html file.
+7.ypu may observe the results in the browser.
+
+
+
+Note: sometimes Update button was disabled..so the testcase was failing..it's intemittent..what i observed.
+Thanks!!
